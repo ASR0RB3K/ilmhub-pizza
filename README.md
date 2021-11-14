@@ -3,4 +3,4 @@
 - [x] Pizza Entity
 - [x] Pizza Model
 - [ ] Pizza Controller
-- [ ] Database
+- [x] Database
