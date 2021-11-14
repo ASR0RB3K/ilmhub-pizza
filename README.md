@@ -3,5 +3,5 @@
 - [x] Pizza Entity
 - [x] Pizza Model
 - [x] Migrations
-- [ ] Pizza Controller
+- [X] Pizza Controller
 - [x] Database

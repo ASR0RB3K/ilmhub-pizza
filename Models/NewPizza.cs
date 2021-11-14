@@ -20,7 +20,7 @@ namespace pizza.Models
 
         [Required]
         [JsonConverter(typeof(JsonStringEnumConverter))]
-        public EPizzaStockStatusModel? StockStatus { get; set; }
+        public EPizzaStockStatusModel StockStatus { get; set; }
 
         [Required]
         [MaxLength(1024)]
