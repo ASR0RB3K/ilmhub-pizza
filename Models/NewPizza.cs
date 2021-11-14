@@ -1,11 +1,11 @@
-using System.ComponentModel.DataAnnotations.Schema;
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
-namespace pizza.Entity
+namespace pizza.Models
 {
-    public class Pizza
+    public class NewPizza
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
         public Guid Id { get; set; }
@@ -20,7 +20,7 @@ namespace pizza.Entity
 
         [Required]
         [JsonConverter(typeof(JsonStringEnumConverter))]
-        public EPizzaStockStatus? StockStatus { get; set; }
+        public EPizzaStockStatusModel? StockStatus { get; set; }
 
         [Required]
         [MaxLength(1024)]
@@ -29,14 +29,5 @@ namespace pizza.Entity
         [Required]
         [Range(0, 1000)]
         public double Price { get; set; }
-
-        public Pizza(Guid id, string title, string shortName, string ingredients, double price)
-        {
-            Id = Guid.NewGuid();
-            Title = title;
-            ShortName = shortName;
-            Ingredients = ingredients;
-            Price = price;
-        }
     }
 }
