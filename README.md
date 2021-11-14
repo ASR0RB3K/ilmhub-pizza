@@ -1,6 +1,6 @@
 ## Ilmhub Pizza
 - [x] API Created
-- [ ] Pizza Entity
+- [x] Pizza Entity
 - [ ] Pizza Model
 - [ ] Pizza Controller
 - [ ] Database
